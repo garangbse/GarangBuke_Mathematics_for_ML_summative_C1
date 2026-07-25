@@ -5,8 +5,8 @@ import '../services/prediction_service.dart';
 import '../widgets/labeled_text_field.dart';
 import '../widgets/result_display.dart';
 
-/// The app's single page: 8 input fields, a Predict button, and a
-/// display area for the result or an error message.
+// The app's single page: 8 input fields, a Predict button, and a
+// display area for the result or an error message.
 class PredictionScreen extends StatefulWidget {
   const PredictionScreen({super.key});
 

@@ -1,5 +1,5 @@
-/// Represents the 8 input variables the prediction model needs,
-/// collected from the form fields on the prediction screen.
+// Represents the 8 input variables the prediction model needs,
+// collected from the form fields on the prediction screen.
 class FreelancerProfile {
   final String gender;
   final int age;
@@ -21,8 +21,8 @@ class FreelancerProfile {
     required this.clientSatisfaction,
   });
 
-  /// Matches the field names expected by the API's Pydantic
-  /// PredictionRequest schema exactly.
+  // Matches the field names expected by the API's Pydantic
+  // PredictionRequest schema exactly.
   Map<String, dynamic> toJson() {
     return {
       'gender': gender,

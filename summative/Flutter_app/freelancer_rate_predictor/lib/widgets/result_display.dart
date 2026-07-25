@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-/// The display area that shows either the predicted value, an error
-/// message, or a neutral placeholder before the first prediction.
+// The display area that shows either the predicted value, an error
+// message, or a neutral placeholder before the first prediction.
 class ResultDisplay extends StatelessWidget {
   final String? resultText;
   final bool isError;

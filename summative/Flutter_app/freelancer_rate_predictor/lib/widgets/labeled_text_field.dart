@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-/// A single labeled input field with a hint and optional numeric-range
-/// validation. Used for all 8 prediction inputs so the form-building code
-/// in the screen stays short and consistent.
+// A single labeled input field with a hint and optional numeric-range
+// validation. Used for all 8 prediction inputs so the form-building code
+// in the screen stays short and consistent.
 class LabeledTextField extends StatelessWidget {
   final TextEditingController controller;
   final String label;
