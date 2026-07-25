@@ -43,15 +43,15 @@ app = FastAPI(
 
 # CORS -- explicit allow-list, not a wildcard. See README for full reasoning.
 
-ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    # "https://your-frontend-app.com",  # replace with your real frontend domain
-]
+# ALLOWED_ORIGINS = [
+#     "http://localhost:3000",
+#     "http://127.0.0.1:3000",
+#     # "https://your-frontend-app.com",  # replace with your real frontend domain
+# ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=ALLOWED_ORIGINS,
+    allow_origin_regex=r"http://localhost:\d+",
     allow_credentials=False,
     allow_methods=["GET", "POST"],
     allow_headers=["Content-Type", "Authorization"],

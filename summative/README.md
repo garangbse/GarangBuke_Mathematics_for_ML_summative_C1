@@ -56,8 +56,18 @@ Full details for each piece (API setup with `uv`, Render deployment steps, Flutt
 This project uses **uv** for all Python dependency/virtual-environment management —
 see `summative/pyproject.toml` and `summative/uv.lock`. From `summative/`:
 ```bash
+# 1. Create the virtual environment (creates .venv/ from pyproject.toml)
+uv venv
+
+# 2. Activate it (optional -- uv run below works without activating too)
+source .venv/bin/activate        # macOS/Linux
+# .venv\Scripts\activate         # Windows
+
+# 3. Install all locked dependencies into that environment
 uv sync
+
+# 4. Run project commands inside the environment, without needing to activate it first
 cd API
 uv run --project .. python train_initial_model.py
-uv run --project .. ur run uvicorn prediction:app --reload
+uv run --project .. uv run uvicorn prediction:app --reload
 ```
