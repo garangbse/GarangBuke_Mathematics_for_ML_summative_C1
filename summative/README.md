@@ -8,9 +8,9 @@ experience, rating, activity status, and client satisfaction — and serves it t
 mobile app so the prediction is usable outside a notebook.
 
 ## Live API (public, not localhost)
-- **Base URL:** `https://<your-render-app>.onrender.com` — replace after deploying (see `summative/API/README.md`)
-- **Swagger UI (test it here):** `https://<your-render-app>.onrender.com/docs`
-- **Predict endpoint:** `POST https://<your-render-app>.onrender.com/predict`
+- **Base URL:** `https://garangbuke-mathematics-for-ml-summative.onrender.com` — replace after deploying (see `summative/API/README.md`)
+- **Swagger UI (test it here):** `https://garangbuke-mathematics-for-ml-summative.onrender.com/docs`
+- **Predict endpoint:** `POST https://garangbuke-mathematics-for-ml-summative.onrender.com/predict`
 
 ## Video Demo
 📺 **YouTube (≤7 min):** `<paste your YouTube link here after recording>`
@@ -59,5 +59,5 @@ see `summative/pyproject.toml` and `summative/uv.lock`. From `summative/`:
 uv sync
 cd API
 uv run --project .. python train_initial_model.py
-uv run --project .. uvicorn prediction:app --reload
+uv run --project .. ur run uvicorn prediction:app --reload
 ```
