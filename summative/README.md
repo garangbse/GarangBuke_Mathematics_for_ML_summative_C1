@@ -1,11 +1,7 @@
 # Freelancer Hourly Rate Predictor — Summative Project
 
 ## Mission & Problem
-Freelance platforms hold rich profile data, yet freelancers rarely get a clear, data-driven signal
-for what they should charge per hour. This project builds a regression model that predicts a
-freelancer's **hourly rate (USD)** from their profile — gender, age, country, primary skill,
-experience, rating, activity status, and client satisfaction — and serves it through an API and a
-mobile app so the prediction is usable outside a notebook.
+My mission lies in job creation and a target audience I noticed for this is freelance platforms that hold rich profile data, yet freelancers rarely get a clear, data-driven signal for what they should charge per hour. This project builds a regression model that predicts a freelancer's **hourly rate (USD)** from their profile — gender, age, country, primary skill,experience, rating, activity status, and client satisfaction — and serves it through an API and amobile app so the prediction is usable outside a notebook.
 
 ## Live API (public, not localhost)
 - **Base URL:** `https://garangbuke-mathematics-for-ml-summative.onrender.com`

@@ -46,7 +46,6 @@ app = FastAPI(
 # ALLOWED_ORIGINS = [
 #     "http://localhost:3000",
 #     "http://127.0.0.1:3000",
-#     # "https://your-frontend-app.com",  # replace with your real frontend domain
 # ]
 
 app.add_middleware(
