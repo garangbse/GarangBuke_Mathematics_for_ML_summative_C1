@@ -66,8 +66,8 @@ def train_and_select_best(df_raw) -> dict:
     least-loss model -> persist all artifacts to disk."""
     rng = np.random.RandomState(RANDOM_STATE)
 
-    df_clean = clean_raw_dataframe(df_raw)                 # <- from preprocessing.py
-    df_model = build_feature_matrix(df_clean)               # <- from preprocessing.py
+    df_clean = clean_raw_dataframe(df_raw)        #  from preprocessing.py
+    df_model = build_feature_matrix(df_clean)     #  from preprocessing.py
 
     target_col = "hourly_rate_usd"
     feature_cols = [c for c in df_model.columns if c != target_col]

@@ -21,9 +21,9 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 ### 2. Install dependencies (from the `summative/` folder, one level up)
 ```bash
-cd ..            # into summative/
+cd ..  
+cd API          # into summative/
 uv sync
-cd API
 ```
 
 ### 3. (Optional) Retrain the initial model — artifacts/ already ships trained
@@ -35,12 +35,12 @@ uv run --project .. python train_initial_model.py
 ```bash
 uv run --project .. uvicorn prediction:app --reload
 ```
-- Swagger UI: http://127.0.0.1:8000/docs
-- Health check: http://127.0.0.1:8000/health
+- Swagger UI: https://garangbuke-mathematics-for-ml-summative.onrender.com/docs
+- Health check: https://garangbuke-mathematics-for-ml-summative.onrender.com/health
 
 ### 5. Try it
 ```bash
-curl -X POST http://127.0.0.1:8000/predict \
+curl -X POST https://garangbuke-mathematics-for-ml-summative.onrender.com/predict\
   -H "Content-Type: application/json" \
   -d '{
     "gender": "female", "age": 34, "country": "India",
@@ -51,7 +51,7 @@ curl -X POST http://127.0.0.1:8000/predict \
 
 Retrain (upload a CSV of new rows, same columns as `global_freelancers_raw.csv`):
 ```bash
-curl -X POST http://127.0.0.1:8000/retrain \
+curl -X POST https://garangbuke-mathematics-for-ml-summative.onrender.com/retrain \
   -F "file=@path/to/new_freelancers.csv;type=text/csv"
 ```
 Or use the Swagger UI at `/docs` → `POST /retrain` → "Try it out". The response reports which
