@@ -2,7 +2,7 @@
 name = "freelancer-rate-summative"
 version = "1.0.0"
 description = "Summative: freelancer hourly-rate regression model, FastAPI service, and Flutter client."
-requires-python = ">=3.11"
+requires-python = ">=3.12.10"
 dependencies = [
     "fastapi==0.115.6",
     "uvicorn[standard]==0.34.0",
